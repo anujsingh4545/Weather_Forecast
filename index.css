@@ -1,0 +1,286 @@
+*, *::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    color: white;
+    padding: 0rem 3rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.466) , rgba(0, 0, 0, 0.493)), url('https://source.unsplash.com/1280x957/?paris');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.background{
+    background-color: #000000ce; 
+    border-radius: 5rem;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    color: white;
+    font-family: 'Righteous', serif;
+    font-size: 11rem; 
+    text-shadow: .03em .03em 0  tomato;
+    margin-bottom: 3rem !important;
+    }
+#admin{
+    color:white;
+    width: 100%;
+    padding: 1rem 0rem;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 4px 3px 4px tomato;
+    margin-top: 1rem;
+}
+
+main{
+    display: flex;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.content{
+    width: 100%;
+}
+img{
+    width: 60%;  
+    flex-basis: 50%;
+    padding: 1rem 1rem;
+    border-radius: 5rem;
+
+}
+
+.head{
+    margin-top: 3rem;
+    display: flex;
+    position: relative;
+}
+.head input{
+    width: 75%;
+    margin-left: 6rem;
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    color: white;
+    background-color: #7c7c7c2b;
+    outline: none;
+}
+.bi{
+    margin-left: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #7c7c7c2b;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.bi:hover{
+    border-radius: 1.5rem;
+}
+
+.city{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 4rem !important ;
+    color: rgb(219, 82, 58) !important;
+}
+.same{
+    padding: 0.5rem 0rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: whitesmoke;
+    text-shadow: 5px 3px 3px rgba(255, 255, 255, 0.315);
+}
+
+.four{
+    width: 60%;
+    text-align: left;
+    padding: 1rem 2rem;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.fifth{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media(max-width:1800px){
+    .four{
+        width: 60%;
+    }
+    .third{
+        padding-left: 1rem;
+        display: flex;
+    }
+    .second{
+        width: 90%;
+        margin-left: 6rem;
+    }
+    .fifth{
+        width: 40%;
+    }
+
+    .same{
+        font-size: 2.3rem;
+    }
+}
+
+@media(max-width:1150px){
+    img{
+        width: 45%;
+    }
+    .second{
+        width: 90%;
+        margin-left: 2rem;
+    }
+
+    .head input{
+        margin-left: 2rem;
+    }
+    .same{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:1000px){
+
+    #heading{
+        font-size: 9rem;
+    }
+    main{
+        flex-direction: column;
+    }
+    img{
+        width: 50%;
+        margin: auto;
+    }
+    body{
+        height: 100%;
+    }
+    .content{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2rem !important;
+    }
+    .head{
+        align-items: center;
+        justify-content: center;
+    }
+    .second{
+        width: 100%;
+        margin-left: 0rem;
+    }
+    .third{
+        width: 100%;
+        padding-left: 0rem;
+    }
+    .four{
+        width: 60%;
+    }
+    .fifth{
+        width: 40%;
+    }
+    .head input{
+        width: 90%;
+        margin-left: 0rem;
+    }
+}
+
+@media(max-width:780px){
+    #heading{
+        font-size: 7.5rem;
+    }
+    .city{
+        font-size: 3rem !important;
+    }
+}
+
+@media(max-width:650px){
+    #heading{
+        font-size: 6rem;
+    }
+    .city{
+        font-size: 2.5rem !important;
+    }
+    .same{
+        font-size: 1.5rem ;
+    }
+    #admin{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:550px){
+    #heading{
+        font-size: 5rem;
+    }
+    .city{
+        font-size: 2rem !important;
+    }
+    .same{
+        font-size: 1rem ;
+    }
+    #admin{
+        font-size: 1.5rem;
+        position: fixed;
+        bottom: 1%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 0rem !important;
+    }
+    body{
+        height: 100vh !important;
+    }
+
+}
+
+@media(max-width:450px){
+    #heading{
+        font-size: 3.2rem;
+    }
+    .city{
+        font-size: 1.6rem !important;
+    }
+    .same{
+        font-size: 1rem ;
+    }
+    #admin{
+        font-size: 1.5rem;
+    }
+    .content{
+        width: 90%;
+    }
+    .four{
+        padding: 1rem 0.5rem;
+    }
+}
+
+.hide{
+    display: none;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,900&family=Open+Sans:ital,wght@1,300;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <h1 id="heading">Weather Forecast</h1>
+
+    <div class="background ">
+        <main>
+            <img src="weather1.gif" id="gif" alt="">
+
+            <div class="content">
+
+                <div class="head">
+                    <input type="text" class="textArea" placeholder="Enter city name...">
+                    <i class="bi bi-search"></i>
+                </div>
+               <div class="second">
+                <p class="same city"><span id="SearchCity">Gorakhpur</span></p>
+            <div class="third">
+            <div class="four">
+                 <p class="same ">Temperature : <span id="temp"> 51  </span>&#8451</p>
+                <p class="same ">Weather : <span id="weather"> cloudy</span> </p>
+                <p class="same ">Pressure : <span id="Pressure"> 60 %</span> </p>
+                <p class="same ">Wind Speed : <span id="wind"> 6.2 km/h</span> </p>
+                <p class="same ">Humidity : <span id="humidity"> 60%</span> </p>
+                <p class="same ">Temp max : <span id="max"> 32</span>&#8451 </p>
+            </div>
+            <div class="fifth">
+            <img src="hello" class="icon" alt="finding">
+        </div>
+            </div>
+            </div>
+            </div>
+        </main>
+    </div>
+    <p id="admin">Made with 💙 ~ Anuj Singh</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
